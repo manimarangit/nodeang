@@ -1,0 +1,16 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "angular.ng-template",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next"
+      ]
+    }
+  },
+
+  "postCreateCommand": "npm install -g @angular/cli && cd backend && npm install && cd ../frontend && npm install"
+}
